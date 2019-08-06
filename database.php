@@ -1,0 +1,10 @@
+<?php
+$dsn = 'mysql:dbname=twitter;host=127.0.0.1';
+$user = 'root';
+$password = '';
+
+try {
+    $db = new PDO($dsn, $user, $password);
+} catch (PDOException $e) {
+    echo 'Подключение не удалось: ' . $e->getMessage();
+}
